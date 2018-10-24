@@ -16,31 +16,7 @@ end
 
 local function always() return true end
 
-local function forbid_inventory(what)
-    local fn
-    if type(what) == 'table' then
-        function fn(ghost, prev, player)
-            local inv
-            for _,k in pairs(what) do
-                inv = prev.get_inventory(k)
-                if inv and not inv.is_empty() then
-                    return
-                end
-            end
-            return revive_hack(ghost, prev, player)
-        end
-    else
-        function fn(ghost, prev, player)
-            local inv = prev.get_inventory(what)
-            if not inv or inv.is_empty() then
-                return revive_hack(ghost, prev, player)
-            end
-        end
-    end
-    return fn
-end
-
-function restore_inventory(contents, inv)
+local function restore_inventory(contents, inv)
     local n
     for name, count in pairs(contents) do
         count = count - inv.insert({count=count, name=name})
@@ -113,6 +89,30 @@ local function revive_hack(ghost, prev)
     end
 
     return
+end
+
+local function forbid_inventory(what)
+    local fn
+    if type(what) == 'table' then
+        function fn(ghost, prev, player)
+            local inv
+            for _,k in pairs(what) do
+                inv = prev.get_inventory(k)
+                if inv and not inv.is_empty() then
+                    return
+                end
+            end
+            return revive_hack(ghost, prev, player)
+        end
+    else
+        function fn(ghost, prev, player)
+            local inv = prev.get_inventory(what)
+            if not inv or inv.is_empty() then
+                return revive_hack(ghost, prev, player)
+            end
+        end
+    end
+    return fn
 end
 
 function supports.transport_belt(ghost, prev, player)

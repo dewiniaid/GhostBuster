@@ -50,6 +50,10 @@ Everything else, but notable explanations:
 
 * **Tiles**:  Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63051)
 
+### 0.2.1 (2018-10-23)
+
+* Possibly fixes a crash related to `revive_hack`.
+
 ### 0.2.0 (2018-10-23)
 
 * Add support for accumulators, solar panels, and furnaces.
