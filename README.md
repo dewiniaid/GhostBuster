@@ -32,7 +32,15 @@ and filters of a splitter ghost.
   
 * **Logistic Chests**: (Revive Hack) Must be empty.
 
-* **Inserters**: (Revive Hack) Must be empty.
+* **Inserters**: (Revive Hack) Must be empty.  Burner inserters may be supported depending on mod settings, in which
+  case any remaining fuel will be preserved.
+
+* **Furnaces**: (Revive Hack) Must be empty and unmoduled.  Burner furnaces (e.g. Stone and Steel Furnaces) may be supported
+  depending on mod settings, in which case any remaining fuel will be preserved.
+
+* **Solar Panels**: No restrictions.
+
+* **Accumulators**: (Revive Hack) No restrictions.
 
 ## Unsupported Entities
 
@@ -41,6 +49,12 @@ Everything else, but notable explanations:
 * **Anything with fluids**: Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63052)
 
 * **Tiles**:  Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63051)
+
+### 0.2.0 (2018-10-23)
+
+* Add support for accumulators, solar panels, and furnaces.
+* Properly detect and handle entities with burners instead of inadvertently clobbering their fuel state.
+* Skip entities that have a non-empty module inventory or a non-empty output inventory in addition to other checks.
 
 ### 0.1.0 (2018-10-20)
  

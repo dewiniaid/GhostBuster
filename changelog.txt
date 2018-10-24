@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 23. 10. 2018
+  Changes:
+    - Add support for solar panels.
+    - Add support for accumulators.
+    - Add support for furnaces, provided that their inventory is empty.
+
+  Bugfixes:
+    - Properly handle supported entities that have burners rather than inadvertently destroying their fuel.
+      Depending on mod settings, GhostBuster either preserves the fuel state (default) or allows bots to do their
+      normal vanilla behavior.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 20. 10. 2018
   Changes:
