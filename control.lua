@@ -50,10 +50,10 @@ local function revive_hack(ghost, prev)
     end
 
     if prev.burner then
-        if not settings.global["GhostBuster_allow-burners"].value then
-            game.print("Failed setting enabled check")
-            return
-        end
+        --if not settings.global["GhostBuster_allow-burners"].value then
+        --    game.print("Failed setting enabled check")
+        --    return
+        --end
         burner = {}
         burner_inv = {}
         for _,k in pairs(SAVE_BURNER_FIELDS) do

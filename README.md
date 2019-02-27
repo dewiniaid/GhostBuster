@@ -1,3 +1,5 @@
+**For an example, [click here](https://i.imgur.com/sRSJEpb.gifv)**
+
 # GhostBuster
 
 Ever marked a large area for deconstruction just to place it again offset by a few tiles?  Ever noticed how your
@@ -49,6 +51,10 @@ Everything else, but notable explanations:
 * **Anything with fluids**: Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63052)
 
 * **Tiles**:  Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63051)
+
+### 0.2.2 (2019-02-26)
+
+* Preliminary update for Factorio 0.17
 
 ### 0.2.1 (2018-10-23)
 
