@@ -218,3 +218,4 @@ end
 
 
 script.on_event(defines.events.on_built_entity, function(event) check_ghost(event.created_entity, game.players[event.player_index]) end)
+script.set_event_filter(defines.events.on_built_entity, {{filter='ghost'}})

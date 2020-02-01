@@ -52,9 +52,13 @@ Everything else, but notable explanations:
 
 * **Tiles**:  Due to [this bug](https://forums.factorio.com/viewtopic.php?f=7&t=63051)
 
+### 0.2.3 (2020-02-01)
+
+* **Update for Factorio 0.18**
+
 ### 0.2.2 (2019-02-26)
 
-* Preliminary update for Factorio 0.17
+* **Preliminary update for Factorio 0.17**
 
 ### 0.2.1 (2018-10-23)
 

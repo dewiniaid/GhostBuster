@@ -1,11 +1,11 @@
 {
     "name": "GhostBuster",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "title": "GhostBuster",
     "author": "Dewin",
     "contact": "https://github.com/dewiniaid/GhostBuster",
     "homepage": "https://github.com/dewiniaid/GhostBuster",
-    "factorio_version": "0.17",
-    "dependencies": ["base >= 0.17"],
+    "factorio_version": "0.18",
+    "dependencies": ["base >= 0.18"],
     "description": "Cancels deconstruction of entities when a ghost of the same entity is placed on top of them."
 }
