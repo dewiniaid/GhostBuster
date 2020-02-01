@@ -55,6 +55,8 @@ Everything else, but notable explanations:
 ### 0.2.3 (2020-02-01)
 
 * **Update for Factorio 0.18**
+* Use event filtering to only notice build events involving ghosts.
+
 
 ### 0.2.2 (2019-02-26)
 
